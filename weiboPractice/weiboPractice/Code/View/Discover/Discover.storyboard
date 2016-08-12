@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="quW-ey-vEv">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Navigation Controller-->
+        <scene sceneID="1Jv-GD-fsH">
+            <objects>
+                <navigationController id="quW-ey-vEv" customClass="MainNavigationController" customModule="weiboPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="17u-cX-DuR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="O15-oM-Jnn" kind="relationship" relationship="rootViewController" id="Bnn-G4-c4k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OHn-az-eBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-534" y="174"/>
+        </scene>
+        <!--发现-->
+        <scene sceneID="Llu-Ml-s6v">
+            <objects>
+                <viewController id="O15-oM-Jnn" customClass="DiscoverController" customModule="weiboPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hs9-GV-fkH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y5d-2f-KX0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ook-L2-8TC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="发现" id="RX4-du-itQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jWf-96-Ynp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178" y="173"/>
+        </scene>
+    </scenes>
+</document>
