@@ -1,0 +1,3 @@
+target ‘weiboPractice’ do
+    pod 'Masonry'
+end
