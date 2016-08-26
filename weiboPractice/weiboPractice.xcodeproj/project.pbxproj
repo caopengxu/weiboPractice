@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2709FDFB85454E9AB82CAA66 /* libPods-weiboPractice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E43B6B613318FAB835B9C5E /* libPods-weiboPractice.a */; };
+		8042583BB381216699AB2A65 /* Pods_weiboPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4252F8A47A000D9EAFA6E2DA /* Pods_weiboPractice.framework */; };
+		CA8AE8301D6FD45A0056B880 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF8904E1D5DA0C700CAF57D /* MainTabBarController.swift */; };
 		CAF890171D5D9BDB00CAF57D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF890161D5D9BDB00CAF57D /* AppDelegate.swift */; };
 		CAF8901E1D5D9BDB00CAF57D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF8901D1D5D9BDB00CAF57D /* Assets.xcassets */; };
 		CAF890211D5D9BDB00CAF57D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF8901F1D5D9BDB00CAF57D /* LaunchScreen.storyboard */; };
@@ -47,7 +48,7 @@
 
 /* Begin PBXFileReference section */
 		3B5CEA1FA57651418C471583 /* Pods-weiboPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weiboPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weiboPractice/Pods-weiboPractice.debug.xcconfig"; sourceTree = "<group>"; };
-		4E43B6B613318FAB835B9C5E /* libPods-weiboPractice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-weiboPractice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4252F8A47A000D9EAFA6E2DA /* Pods_weiboPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weiboPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9601D1831871367CA01418A8 /* Pods-weiboPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weiboPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-weiboPractice/Pods-weiboPractice.release.xcconfig"; sourceTree = "<group>"; };
 		CAF890131D5D9BDB00CAF57D /* weiboPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weiboPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF890161D5D9BDB00CAF57D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2709FDFB85454E9AB82CAA66 /* libPods-weiboPractice.a in Frameworks */,
+				8042583BB381216699AB2A65 /* Pods_weiboPractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +114,7 @@
 		A3265A6A3157F749CD76217C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4E43B6B613318FAB835B9C5E /* libPods-weiboPractice.a */,
+				4252F8A47A000D9EAFA6E2DA /* Pods_weiboPractice.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -481,6 +482,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA8AE8301D6FD45A0056B880 /* MainTabBarController.swift in Sources */,
 				CAF8902C1D5D9BDB00CAF57D /* weiboPracticeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -613,6 +615,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = weiboPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cpx.weiboPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -626,6 +629,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = weiboPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cpx.weiboPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
