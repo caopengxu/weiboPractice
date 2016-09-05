@@ -13,11 +13,12 @@ class HomeController: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "首页"
     }
     
     @objc private func showMe()
     {
-        let vc = UIViewController.init()
+        let vc = BaseController.init()
         vc.view.backgroundColor = #colorLiteral(red: 1, green: 0.5, blue: 0, alpha: 1)
         
         navigationController?.pushViewController(vc, animated: true)
@@ -29,10 +30,12 @@ class HomeController: BaseController {
 // MARK: - 设置界面
 extension HomeController
 {
+    /// 设置父类方法
     override func setupUI()
     {
         super.setupUI()
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "我", style: .plain, target: self, action: #selector(showMe))
+        
+        navItem.leftBarButtonItem = UIBarButtonItem(title: "我", fontSize: 16, target: self, action: #selector(showMe))
     }
 }
 

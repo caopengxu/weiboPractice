@@ -20,9 +20,7 @@ class MainTabBarController: UITabBarController {
 
     // FIXME:撰写微博没有实现
     @objc private func composeStatus()
-    {
-        
-    }
+    {}
     
     private lazy var composeBtn: UIButton = UIButton.init()
 }
@@ -31,21 +29,6 @@ class MainTabBarController: UITabBarController {
 
 extension MainTabBarController
 {
-    private func setupComposeBtn()
-    {
-        tabBar.addSubview(composeBtn)
-     
-        composeBtn.backgroundColor = #colorLiteral(red: 1, green: 0.5, blue: 0, alpha: 1)
-        
-        let count = CGFloat(childViewControllers.count)
-        let w = tabBar.bounds.width / count - 1
-        
-        composeBtn.frame = tabBar.bounds.insetBy(dx: 2 * w, dy: 0)
-        
-        composeBtn.addTarget(self, action: #selector(composeStatus), for: .touchUpInside)
-    }
-    
-    
     private func setupChildControllers()
     {
         let array = [
@@ -57,11 +40,11 @@ extension MainTabBarController
         ]
         
         var arrayM = [UIViewController]()
-        for dict in array {
-            
+        for dict in array
+        {
             arrayM.append(controller(dict: dict))
         }
-    
+        
         viewControllers = arrayM
     }
     
@@ -85,6 +68,21 @@ extension MainTabBarController
         vc?.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName : #colorLiteral(red: 0.7602152824, green: 0.7601925135, blue: 0.7602053881, alpha: 1)], for: .highlighted)
         
         return vc!
+    }
+    
+    
+    private func setupComposeBtn()
+    {
+        tabBar.addSubview(composeBtn)
+        
+        composeBtn.backgroundColor = #colorLiteral(red: 1, green: 0.5, blue: 0, alpha: 1)
+        
+        let count = CGFloat(childViewControllers.count)
+        let w = tabBar.bounds.width / count - 1
+        
+        composeBtn.frame = tabBar.bounds.insetBy(dx: 2 * w, dy: 0)
+        
+        composeBtn.addTarget(self, action: #selector(composeStatus), for: .touchUpInside)
     }
 }
 

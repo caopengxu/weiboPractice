@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8042583BB381216699AB2A65 /* Pods_weiboPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4252F8A47A000D9EAFA6E2DA /* Pods_weiboPractice.framework */; };
+		CA8572261D70133900C26539 /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8572251D70133900C26539 /* UIBarButtonItem+Extensions.swift */; };
 		CA8AE8301D6FD45A0056B880 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF8904E1D5DA0C700CAF57D /* MainTabBarController.swift */; };
 		CAF890171D5D9BDB00CAF57D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF890161D5D9BDB00CAF57D /* AppDelegate.swift */; };
 		CAF8901E1D5D9BDB00CAF57D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF8901D1D5D9BDB00CAF57D /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		3B5CEA1FA57651418C471583 /* Pods-weiboPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weiboPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weiboPractice/Pods-weiboPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		4252F8A47A000D9EAFA6E2DA /* Pods_weiboPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weiboPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9601D1831871367CA01418A8 /* Pods-weiboPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weiboPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-weiboPractice/Pods-weiboPractice.release.xcconfig"; sourceTree = "<group>"; };
+		CA8572251D70133900C26539 /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
 		CAF890131D5D9BDB00CAF57D /* weiboPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weiboPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF890161D5D9BDB00CAF57D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAF8901D1D5D9BDB00CAF57D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				CAF890671D5DBF9700CAF57D /* Bundle+Extension.swift */,
+				CA8572251D70133900C26539 /* UIBarButtonItem+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				CAF890171D5D9BDB00CAF57D /* AppDelegate.swift in Sources */,
 				CAF890681D5DBF9700CAF57D /* Bundle+Extension.swift in Sources */,
 				CAF890571D5DA15200CAF57D /* MessageController.swift in Sources */,
+				CA8572261D70133900C26539 /* UIBarButtonItem+Extensions.swift in Sources */,
 				CAF890551D5DA14200CAF57D /* HomeController.swift in Sources */,
 				CAF890531D5DA11100CAF57D /* BaseController.swift in Sources */,
 				CAF8905B1D5DA17400CAF57D /* ProfileController.swift in Sources */,
